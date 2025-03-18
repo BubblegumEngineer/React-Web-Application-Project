@@ -1,11 +1,23 @@
-import React from 'react'
+// import React from 'react';
+import { Link } from 'react-router-dom'; // Correct import
 
 function NavBar() {
   return (
-    <div>
-      
-    </div>
-  )
+    <nav></nav>
+      // <nav style={styles}>
+      //     <a href="https://www.tradingview.com/symbols/DJ-DJI/">Dow Jones Industrial Average Index</a>
+      //     <a href="https://www.cnn.com/markets/stocks/NDAQ">Nasdaq</a>
+      //     <a href="https://www.tradingview.com/symbols/SPX/">S&P 500</a>
+      // </nav>
+  );
 }
 
-export default NavBar
+// const styles = {
+//   display: "flex",
+//   justifyContent: "space-around", 
+//   fontSize: "25px",
+//   fontWeight: "bold",
+//   backgroundColor: "turquoise",
+// }
+
+export default NavBar;

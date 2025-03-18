@@ -1,14 +1,25 @@
-import.meta.env.VITE_OMDB_API_KEY
 import './App.css'
-
-import React from 'react'
+import HomePage from './components/HomePage'
 
 function App() {
+
+
   return (
-    <div>
+    <>
+      <h1>VibeTech News</h1>
+{/* <h3><u>Top Headlines</u>: Technology/h3> */}
+      <HomePage />
       
-    </div>
+    </>
   )
 }
 
-export default App
+export default App;
+
+// const headerStyles = {
+//   textAlign: 'center',
+//   padding: '20px',
+//   backgroundColor: '#333',
+//   color: '#fff',
+// };
+
