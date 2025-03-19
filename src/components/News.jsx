@@ -5,6 +5,7 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import.meta.env.VITE_NEWS_API_KEY
 
  function News() {
    const [newsData, setNewsData] = useState([]);
@@ -14,16 +15,21 @@ import Col from "react-bootstrap/Col";
    // Make api call to news api
    async function getNewsData() {
      setLoading(true);
-
-
-// Make news API call using axios
-    const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
-    const resp = await axios.get( `https://newsapi.org/v2/top-headlines?q=technology&country=us&apiKey=${API_KEY}`);   
+try {
+  const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
+    const resp = await axios.get(`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${API_KEY}`);   
       setNewsData(resp.data.articles);
-
+console.log(newsData)
      //Set loading boolean to false so that we know to show news articles
         setLoading(false);
-     }
+     
+  
+} catch (error) {
+  console.error(error)
+}
+   }
+// Make news API call using axios
+    
 
 
   useEffect(() => {

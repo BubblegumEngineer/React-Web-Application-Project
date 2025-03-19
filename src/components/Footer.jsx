@@ -11,7 +11,9 @@ function Footer() {
 const styles = {
   display: "flex",
   justifyContent: "space-around", 
-  backgroundColor: "coral"
+  backgroundColor: "coral",
+  bottom: 0,
+  width: '100%'
 }
 
 export default Footer;

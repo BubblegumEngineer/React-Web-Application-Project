@@ -1,23 +1,23 @@
 // import React from 'react';
-import { Link } from 'react-router-dom'; // Correct import
+//import { Link } from 'react-router-dom'; // Correct import
 
 function NavBar() {
   return (
-    <nav></nav>
-      // <nav style={styles}>
-      //     <a href="https://www.tradingview.com/symbols/DJ-DJI/">Dow Jones Industrial Average Index</a>
-      //     <a href="https://www.cnn.com/markets/stocks/NDAQ">Nasdaq</a>
-      //     <a href="https://www.tradingview.com/symbols/SPX/">S&P 500</a>
-      // </nav>
+    
+       <nav style={styles}>
+          <a href="https://techcrunch.com"> TechCrunch - Latest News</a>
+           <a href="https://www.artificialintelligence-news.com">[AI News]</a>
+           <a href="https://news.mit.edu/topic/artificial-intelligence2">[Robotics]</a>
+       </nav>
   );
 }
 
-// const styles = {
-//   display: "flex",
-//   justifyContent: "space-around", 
-//   fontSize: "25px",
-//   fontWeight: "bold",
-//   backgroundColor: "turquoise",
-// }
+ const styles = {
+   display: "flex",
+   justifyContent: "space-around", 
+   fontSize: "50px",
+   fontWeight: "bold",
+   backgroundColor: "aqua",
+ }
 
 export default NavBar;
