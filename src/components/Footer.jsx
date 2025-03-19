@@ -1,9 +1,8 @@
 function Footer() {
   return (
       <footer style={styles}>
-          <h3>See what's new in the Tech Industry</h3>
-          {/* <a href=""></a>
-          <a href=""></a> */}
+          <h2>See what's new in the Tech Industry</h2>
+          
       </footer>
   );
 }
@@ -11,8 +10,7 @@ function Footer() {
 const styles = {
   display: "flex",
   justifyContent: "space-around", 
-  backgroundColor: "coral",
-  bottom: 0,
+  backgroundColor: "lime",
   width: '100%'
 }
 

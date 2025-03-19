@@ -13,7 +13,7 @@ import.meta.env.VITE_NEWS_API_KEY
 
 
    // Make api call to news api
-   async function getNewsData() {
+   async function getNews() {
      setLoading(true);
 try {
   const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
@@ -33,7 +33,7 @@ console.log(newsData)
 
 
   useEffect(() => {
-    getNewsData();
+    getNews();
   }, []);
 
   return (
